@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Java Script Practice</title>
+	<link rel="stylesheet" type="text/css" href="main.css"> 
+
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><script type="text/javascript"> document.write("My First JavaScript");</script></h2>
+		</div>
+
+		<div class="maincontent">
+			<div id="show"></div>
+			<script type="text/javascript">
+
+			//Array
+
+			 /* var arr1 = [1, 2, 3, 4, 5];
+			  document.write(arr1[0],arr1[1]); */
+
+			 /* var arr1 = [1, 2, 3, 4, 5];
+			  var arr2 = [6, 7, 8, 9, 10];
+			  var getarr = arr1.concat(arr2);
+			  document.write(getarr); */
+
+			 /* var color = ["Green", "Blue", "Red", "Black"];
+			  document.write("Before Sorting: "+color+"<br/>");
+			  color.sort();
+			  document.write("After Sorting: "+color); */
+
+			  var num = [10, 100, 50, 1000, 70, 25, 1200];
+			  document.write("Before Sorting: "+num+"<br/>");
+
+			  function arrsort(x, y){
+                  return(x-y);
+			  }
+
+			  num.sort(arrsort);
+			  document.write("After Sorting: "+num);
+
+			  document.write("<br/>");
+
+
+			 /* var num = [10, 100, 50, 1000, 70, 25, 1200];
+			  document.write("Before Sorting: "+num+"<br/>");
+
+			  function arrsort(x, y){
+                  return(y-x);
+			  }
+
+			  num.sort(arrsort);
+			  document.write("After Sorting: "+num); */
+
+			  var num = [10, 100, 50, 1000, 70, 25, 1200];
+
+			  num[num.length]="5000";
+
+			  //num.shift();     remove the first value
+
+			  //num.unshift(12); insert value in the first
+
+              //num.pop();       delete value from last
+
+             // num.push(600);   insert value in the last
+
+			  document.write("After add new: "+num);
+			  document.write("<br/>");
+			  document.write("Length is: "+num.length);
+
+
+
+	        </script>
+		</div>
+
+		<div class="footer">
+			<h4><script type="text/javascript"> document.write("@pronay2020");</script></h4>
+		</div>
+	</section>
+
+</body>
+</html>
