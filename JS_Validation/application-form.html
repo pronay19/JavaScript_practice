@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validator.js"></script>
+</head>
+<body>
+<form name="contactForm" onsubmit="return validateForm()" action="welcome.html" method="post">
+    <h2>Registration Form</h2>
+    <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+    </div>
+
+   <div class="row">
+        <label>Enter Username</label>
+        <input type="text" name="uname">
+        <div class="error" id="unameErr"></div>
+    </div>
+
+    <div class="row">
+        <label>Enter Password</label>
+        <input type="password" name="pass">
+        <div class="error" id="passErr"></div>
+    </div>
+
+    <div class="row">
+        <label>Enter Confirm Password</label>
+        <input type="password" name="conpass">
+        <div class="error" id="conpassErr"></div>
+    </div>
+
+    <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="11">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label>Address</label>
+        <select name="country">
+            <option>Select</option>
+            <option>Dhaka</option>
+            <option>Chottogram</option>
+            <option>Noakhali</option>
+            <option>Rajshahi</option>
+        </select> 
+        <div class="error" id="countryErr"></div>
+    </div>
+    <div class="row">
+        <label>Gender</label>
+        <div class="form-inline">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+           
+    <div class="row">
+        <input type="submit" value="Create Account">
+    </div>
+</form>
+</body>
+</html>
